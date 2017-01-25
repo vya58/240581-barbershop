@@ -1,0 +1,42 @@
+body {
+    font-size: 14px;
+    font-family: "PT Sans Narrow";
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+
+h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.product-category {
+    text-transform: none;
+}
+
+.breadcrumbs {
+    line-height: 20px;
+    color: #000000;
+}
+
+.breadcrumbs a {
+    color: #000000;
+}
+
+.breadcrumbs a:active {
+    text-decoration: none;
+    color: #aba9a7;
+}
