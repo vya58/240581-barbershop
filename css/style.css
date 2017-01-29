@@ -1,3 +1,11 @@
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-size: 14px;
     font-family: "PT Sans Narrow";
@@ -7,15 +15,21 @@ body {
     color: #000000;
 }
 
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
 h1 {
     font-size: 30px;
     line-height: 42px;
 }
 
-
 h2 {
-    font-size: 24px;
-    line-height: 30px;
+    margin-left: 10px;
+    line-height: 18px;
 }
 
 
@@ -25,16 +39,62 @@ a {
     color: #000000;
 }
 
-.product-category {
-    text-transform: none;
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    outline: red solid 2px;
 }
 
+.page-header {
+    margin-bottom: 40px;
+}
+
+main {
+    min-height: 915px;
+}
+
+.navigation {
+    float: left;
+    width: 780px;
+    outline: green solid 2px;
+}
+
+.logo {
+    width: 111px;
+    height: 24px;
+    background-color: #000000;
+}
+
+.logo,
+.main-navigation,
+.main-navigation li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-block {
+    float: right;
+    width: 140px;
+    margin-top: 10px;
+    outline: blue solid 2px;
+}
+
+
 .breadcrumbs {
+    width: 880px;
     line-height: 20px;
     color: #000000;
+    outline: blue solid 2px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
 }
 
 .breadcrumbs a {
+    display: inline-block;
     color: #000000;
 }
 
@@ -43,7 +103,206 @@ a {
     color: #aba9a7;
 }
 
+.features,
+.service-price {
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+    margin: 10px;
+    outline: yellow solid 2px;
+}
+
+.details p {
+    width: 470px;
+    vertical-align: bottom;
+}
+
+.details p:nth-child(2) {
+    float: left;
+    outline: orange solid 2px;
+}
+
+.details p:last-child {
+    float: right;
+    outline: blue solid 2px;
+}
+
+
+.manufacturer {
+    display: inline-block;
+    width: 230px;
+    min-height: 580px;
+    outline: green solid 2px;
+}
+
+.manufacturer h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.manufacturer ul {
+    list-style-type: none;
+    margin-left: -35px;
+    min-height: 250px;
+}
+
+.selection {
+    margin-left: 10px;
+}
+
+.showcase {
+    float: right;
+    width: 720px;
+    min-height: 700px;
+    padding-top: 15px;
+    outline: orange solid 2px;
+}
+
+
+.product {
+    /*float: left;*/
+    display: inline-block;
+    width: 220px;
+    min-height: 290px;
+    vertical-align: top;
+    margin: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align:left;
+    outline: black solid 2px;
+}
+
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product:last-child {
+    margin-right: 0;
+}
+
+.product-category {
+    display: block;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.product-brand {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.paginator {
+    width: 220px;
+    clear: both;
+    margin-left: 10px;
+    margin-top: 20px;
+    outline: yellow solid 2px;
+}
+
+.paginator a,
+.paginator span {
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    margin: 3px;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+
 .buy,
 .paginator a {
     color: #ffffff;
+    background-color: #000000;
+}
+
+.main-footer {
+    margin-top: 40px;
+}
+
+.main-footer section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-contacts {
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 50px;
+    outline: blue solid 2px;
+}
+
+.footer-social {
+    width: 260px;
+    margin-right: 100px;
+    text-align: center;
+    outline: green solid 2px;
+}
+
+.footer-social a {
+    display: inline-block;
+    line-height: 18px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 150px;
+    margin: 0px;
+    text-align: center;
+    outline: yellow solid 2px;
+}
+
+
+.classic {
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    outline: green solid 2px;
+}
+
+.features p,
+.price p,
+.details p:first-child {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.gallery {
+    float: left;
+    width: 510px;
+    margin: 10px;
+    margin-left: 0px;
+    outline: green solid 2px;
+}
+
+.description {
+    float: right;
+    width: 400px;
+    margin: 10px;
+    margin-left: 0px;
+    outline: blue solid 2px;
+}
+
+.gallery img {
+    display: inline-block;
+    margin: 10px;
+    outline: yellow solid 2px;
+}
+
+.description-price {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    outline: orange solid 2px;
+}
+
+.description p:first-child {
+    float: right;
+    outline: orange solid 2px;
 }
